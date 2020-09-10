@@ -21,23 +21,47 @@ class Animal {
 }
 
 class Kucing extends Animal {
-	function KemampuanMendeteksi(){
-		echo "Pendeteksi Gempa";
+	public function JumlahKaki(){
+		return "Kucing memiliki jumlah kaki 4";
+	}
+	public function BisaTerbang(){
+		return "Kucing tidak bisa terbang";
+	}
+	public function Suara(){
+		return "Kucing memiliki suara : Meooong ";
 	}
 }
 class Anjing extends Animal {
-	function KemampuanMelacak(){
-		echo "Hewan Pelacak";
+	public function JumlahKaki(){
+		return "Anjing memiliki jumlah kaki 4";
+	}
+	public function BisaTerbang(){
+		return "Anjing tidak bisa terbang";
+	}
+	public function Suara(){
+		return "Anjing memiliki suara : GuukGuuk ";
 	}
 }
 class Elang extends Animal {
-	function KemampuanMelihat(){
-		echo "Penglihatan Yang Tajam";
+	public function JumlahKaki(){
+		return "Elang memiliki jumlah kaki 2";
+	}
+	public function BisaTerbang(){
+		return "Elang bisa terbang";
+	}
+	public function Suara(){
+		return "Elang memiliki suara : Miiipppp ";
 	}
 }
 class Angsa extends Animal {
-	function BentukLeher(){
-		echo "Leher Yang Panjang";
+	public function JumlahKaki(){
+		return "Angsa memiliki jumlah kaki 2";
+	}
+	public function BisaTerbang(){
+		return "Angsa bisa terbang";
+	}
+	public function Suara(){
+		return "Angsa memiliki suara : Kwaaak ";
 	}
 }
 	
@@ -56,8 +80,6 @@ echo $kucing->bisaTerbang();
 echo "<br>";
 echo $kucing->Suara();
 echo "<br>";
-echo "<br>";
-echo $kucing->KemampuanMendeteksi();
 
 echo "<hr>";
 
@@ -75,15 +97,13 @@ echo $anjing->bisaTerbang();
 echo "<br>";
 echo $anjing->Suara();
 echo "<br>";
-echo "<br>";
-echo $anjing->KemampuanMelacak();
 
 echo "<hr>";
 
 $elang = new Elang;
 $elang->hewan = "Elang";
-$elang->jumlah_kaki = "4";
-$elang->bisa_terbang = "Tidak";
+$elang->jumlah_kaki = "2";
+$elang->bisa_terbang = "Bisa";
 $elang->suara = "Miiipppp";
 
 echo $elang->Hewan();
@@ -94,15 +114,13 @@ echo $elang->bisaTerbang();
 echo "<br>";
 echo $elang->Suara();
 echo "<br>";
-echo "<br>";
-echo $elang->KemampuanMelihat();
 
 echo "<hr>";
 
 $angsa = new Angsa;
 $angsa->hewan = "Angsa";
-$angsa->jumlah_kaki = "4";
-$angsa->bisa_terbang = "Tidak";
+$angsa->jumlah_kaki = "2";
+$angsa->bisa_terbang = "Bisa";
 $angsa->suara = "Kwaaak";
 
 echo $angsa->Hewan();
@@ -113,5 +131,3 @@ echo $angsa->bisaTerbang();
 echo "<br>";
 echo $angsa->Suara();
 echo "<br>";
-echo "<br>";
-echo $angsa->BentukLeher();

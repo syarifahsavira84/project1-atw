@@ -1,22 +1,27 @@
 <?php 
 
 class Mobil {
-	private $merk, $tipe, $mesin, $kecepatan_maksimal;
+	public $merk, $tipe, $mesin, $kecepatan_maksimal;
 
-	private function cetakTipe(){
+	public function cetakTipe(){
 		return $this->tipe;
 	}
 	public function kecepatanMaksimal(){
 		return "Kecepatan maksimal dari mobil ini adalah ".$this->kecepatan_maksimal;
+	}
+	function injekGas(){
+		return "mengalirkan bensin ke ruang bakar, rpm naik, roda berputar";
 	}
 }
 
 class BMW extends Mobil {
 }
 class Tesla extends Mobil {
-	private $merk;
 	function selfParking(){
 		echo "Parkir Sendiri";
+	}
+	function injekGas(){
+		return "mengalirkan listrik ke dinamo, rpm naik, roda berputar";
 	}
 }
 
@@ -34,4 +39,6 @@ $tesla->mesin = "Listrik";
 $tesla->kecepatan_maksimal = "280km/h";
 
 
-echo $tesla->merk;
+echo "BMW : ".$bmw->injekGas();
+echo "<br>";
+echo "Tesla : ".$tesla->injekGas();
