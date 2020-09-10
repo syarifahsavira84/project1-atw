@@ -20,8 +20,19 @@ class Animal {
 	}
 }
 
+class Kucing extends Animal {
+	function SuaraKucing(){
+		echo "Perbedaannya : Suara";
+	}
+}
+class Anjing extends Animal {
+	function SuaraAnjing(){
+		echo "Perbedaannya : Suara";
+	}
+}
+	
 
-$kucing = new Animal;
+$kucing = new Kucing;
 $kucing->hewan = "Kucing";
 $kucing->jumlah_kaki = "4";
 $kucing->bisa_terbang = "Tidak";
@@ -35,10 +46,11 @@ echo $kucing->bisaTerbang();
 echo "<br>";
 echo $kucing->Suara();
 echo "<br>";
+echo $kucing->SuaraKucing();
 
 echo "<hr>";
 
-$anjing = new Animal;
+$anjing = new Anjing;
 $anjing->hewan = "Anjing";
 $anjing->jumlah_kaki = "4";
 $anjing->bisa_terbang = "Tidak";
@@ -52,3 +64,4 @@ echo $anjing->bisaTerbang();
 echo "<br>";
 echo $anjing->Suara();
 echo "<br>";
+echo $anjing->SuaraAnjing();
