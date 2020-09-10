@@ -21,23 +21,23 @@ class Animal {
 }
 
 class Kucing extends Animal {
-	function JenisKucing(){
-		echo "Jenis : Mamalia";
+	function KemampuanMendeteksi(){
+		echo "Pendeteksi Gempa";
 	}
 }
 class Anjing extends Animal {
-	function JenisAnjing(){
-		echo "Jenis : Karnivora";
+	function KemampuanMelacak(){
+		echo "Hewan Pelacak";
 	}
 }
 class Elang extends Animal {
-	function JenisElang(){
-		echo "Jenis : Aves";
+	function KemampuanMelihat(){
+		echo "Penglihatan Yang Tajam";
 	}
 }
 class Angsa extends Animal {
-	function JenisAngsa(){
-		echo "Jenis : Karnivora";
+	function BentukLeher(){
+		echo "Leher Yang Panjang";
 	}
 }
 	
@@ -56,7 +56,8 @@ echo $kucing->bisaTerbang();
 echo "<br>";
 echo $kucing->Suara();
 echo "<br>";
-echo $kucing->JenisKucing();
+echo "<br>";
+echo $kucing->KemampuanMendeteksi();
 
 echo "<hr>";
 
@@ -74,7 +75,8 @@ echo $anjing->bisaTerbang();
 echo "<br>";
 echo $anjing->Suara();
 echo "<br>";
-echo $anjing->JenisAnjing();
+echo "<br>";
+echo $anjing->KemampuanMelacak();
 
 echo "<hr>";
 
@@ -92,7 +94,8 @@ echo $elang->bisaTerbang();
 echo "<br>";
 echo $elang->Suara();
 echo "<br>";
-echo $elang->JenisElang();
+echo "<br>";
+echo $elang->KemampuanMelihat();
 
 echo "<hr>";
 
@@ -110,4 +113,5 @@ echo $angsa->bisaTerbang();
 echo "<br>";
 echo $angsa->Suara();
 echo "<br>";
-echo $angsa->JenisAngsa();
+echo "<br>";
+echo $angsa->BentukLeher();
