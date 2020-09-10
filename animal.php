@@ -21,13 +21,23 @@ class Animal {
 }
 
 class Kucing extends Animal {
-	function SuaraKucing(){
-		echo "Perbedaannya : Suara";
+	function JenisKucing(){
+		echo "Jenis : Mamalia";
 	}
 }
 class Anjing extends Animal {
-	function SuaraAnjing(){
-		echo "Perbedaannya : Suara";
+	function JenisAnjing(){
+		echo "Jenis : Karnivora";
+	}
+}
+class Elang extends Animal {
+	function JenisElang(){
+		echo "Jenis : Aves";
+	}
+}
+class Angsa extends Animal {
+	function JenisAngsa(){
+		echo "Jenis : Karnivora";
 	}
 }
 	
@@ -46,7 +56,7 @@ echo $kucing->bisaTerbang();
 echo "<br>";
 echo $kucing->Suara();
 echo "<br>";
-echo $kucing->SuaraKucing();
+echo $kucing->JenisKucing();
 
 echo "<hr>";
 
@@ -54,7 +64,7 @@ $anjing = new Anjing;
 $anjing->hewan = "Anjing";
 $anjing->jumlah_kaki = "4";
 $anjing->bisa_terbang = "Tidak";
-$anjing->suara = "guukguuk";
+$anjing->suara = "GuukGuuk";
 
 echo $anjing->Hewan();
 echo "<br>";
@@ -64,4 +74,40 @@ echo $anjing->bisaTerbang();
 echo "<br>";
 echo $anjing->Suara();
 echo "<br>";
-echo $anjing->SuaraAnjing();
+echo $anjing->JenisAnjing();
+
+echo "<hr>";
+
+$elang = new Elang;
+$elang->hewan = "Elang";
+$elang->jumlah_kaki = "4";
+$elang->bisa_terbang = "Tidak";
+$elang->suara = "Miiipppp";
+
+echo $elang->Hewan();
+echo "<br>";
+echo $elang->jumlahKaki();
+echo "<br>";
+echo $elang->bisaTerbang();
+echo "<br>";
+echo $elang->Suara();
+echo "<br>";
+echo $elang->JenisElang();
+
+echo "<hr>";
+
+$angsa = new Angsa;
+$angsa->hewan = "Angsa";
+$angsa->jumlah_kaki = "4";
+$angsa->bisa_terbang = "Tidak";
+$angsa->suara = "Kwaaak";
+
+echo $angsa->Hewan();
+echo "<br>";
+echo $angsa->jumlahKaki();
+echo "<br>";
+echo $angsa->bisaTerbang();
+echo "<br>";
+echo $angsa->Suara();
+echo "<br>";
+echo $angsa->JenisAngsa();
