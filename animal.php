@@ -35,3 +35,20 @@ echo $kucing->bisaTerbang();
 echo "<br>";
 echo $kucing->Suara();
 echo "<br>";
+
+echo "<hr>";
+
+$anjing = new Animal;
+$anjing->hewan = "Anjing";
+$anjing->jumlah_kaki = "4";
+$anjing->bisa_terbang = "Tidak";
+$anjing->suara = "guukguuk";
+
+echo $anjing->Hewan();
+echo "<br>";
+echo $anjing->jumlahKaki();
+echo "<br>";
+echo $anjing->bisaTerbang();
+echo "<br>";
+echo $anjing->Suara();
+echo "<br>";
